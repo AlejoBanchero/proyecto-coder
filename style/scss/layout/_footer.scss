@@ -1,6 +1,6 @@
 footer {
 
-    background-color: #d4d4d4;
+    background-color: #d4d4d4c4;
     display: block;
     padding: 100px;
     box-sizing: border-box;
@@ -10,21 +10,26 @@ footer {
         "social"
         "enlaces"
         "newsletter";
-    align-items: center; 
+    align-items: center;
 
 }
 
 
-    .footerEnlaces ul {
+.footerEnlaces {
+    ul {
         display: flex;
         justify-content: space-evenly;
         list-style: none;
         grid-area: enlaces;
 
-        a {
-            text-decoration: none;
-            color: black;
+        li:hover {
+            font-size: large;
         }
-
     }
 
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+}

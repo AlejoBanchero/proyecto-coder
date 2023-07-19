@@ -43,16 +43,16 @@ body {
 }
 
 header {
-  background-color: #474A48;
+  background-color: #313131;
 }
 
 main {
-  background-color: rgb(255, 255, 255);
-  padding: 10vh;
+  background: radial-gradient(ellipse 1000px 60px, rgb(212, 211, 211), white);
+  padding: 10px;
 }
 
 footer {
-  background-color: #d4d4d4;
+  background-color: rgba(212, 212, 212, 0.768627451);
   display: block;
   padding: 100px;
   box-sizing: border-box;
@@ -68,12 +68,15 @@ footer {
   list-style: none;
   grid-area: enlaces;
 }
-.footerEnlaces ul a {
+.footerEnlaces ul li:hover {
+  font-size: large;
+}
+.footerEnlaces a {
   text-decoration: none;
   color: black;
 }
 
-#novedadesP {
+#Titulo, main #contactoTitulo, main #localidadesTitulo {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -101,6 +104,11 @@ footer {
 
 .contenedorFaqs {
   display: grid;
+  flex-direction: column;
+}
+
+main #localidadesTitulo .Localidades {
+  display: flex;
   flex-direction: column;
 }
 
