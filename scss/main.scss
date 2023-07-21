@@ -15,9 +15,8 @@
 
 @import "./pages/pagina-principal";
 @import "./pages/pagina-FAQS";
-@import "./pages/pagina-stores";
-@import "./pages/pagina-contacto";
 @import "./pages/pagina-shop";
+@import "./pages/pagina-contacto";
 
 
 @media (max-width: 425px) {
@@ -30,7 +29,7 @@
     }
 
         main {
-            min-height: 100px;
+        height: 315vh;
     
     }
 

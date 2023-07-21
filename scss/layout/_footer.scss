@@ -1,0 +1,35 @@
+footer {
+
+    background-color: #d4d4d4c4;
+    display: block;
+    padding: 100px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: repeat(3, 8.3vh);
+    grid-template-areas:
+        "social"
+        "enlaces"
+        "newsletter";
+    align-items: center;
+
+}
+
+
+.footerEnlaces {
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        grid-area: enlaces;
+
+        li:hover {
+            font-size: large;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+}

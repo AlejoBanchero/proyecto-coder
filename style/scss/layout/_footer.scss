@@ -1,6 +1,6 @@
 footer {
 
-    background-color: #d4d4d4c4;
+    background-color: #000000;
     display: block;
     padding: 100px;
     box-sizing: border-box;
@@ -11,25 +11,54 @@ footer {
         "enlaces"
         "newsletter";
     align-items: center;
-
-}
-
-
-.footerEnlaces {
-    ul {
+    .footerRedes {
+        margin-bottom: 4%;
         display: flex;
-        justify-content: space-evenly;
-        list-style: none;
-        grid-area: enlaces;
-
-        li:hover {
-            font-size: large;
+        justify-content: center;
+        align-items: center;
+        grid-area: social;
+    
+        ul {
+            display: flex;
+            list-style-type: none;
+            justify-content: space-between;
+            align-items: baseline;
+    
+            li{
+                .redes {
+                    padding: 10%;
+                }
+            }
         }
+    
+        img {
+            width: 50px;
+        }
+    
+    }
+    
+
+    .footerEnlaces {
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+            grid-area: enlaces;
+
+            li:hover {
+                font-size: large;
+                
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
     }
 
-    a {
-        text-decoration: none;
-        color: black;
-    }
+    
 
 }
+

@@ -1,0 +1,28 @@
+main {
+    #localidadesTitulo {
+        @extend #Titulo;
+
+        .Localidades {
+            display: flex;
+            flex-direction: column;
+            
+
+            .ciudades {
+                background-color: rgb(75, 75, 75);
+                color: black;
+                width: 250px;
+                text-align: center;
+
+                .fotosCiudades {
+                    max-width: 100%;
+                    padding: 10px;
+                
+                }
+            }
+
+
+        }
+
+
+    }
+}
