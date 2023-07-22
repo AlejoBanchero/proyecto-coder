@@ -32,7 +32,8 @@ header {
 }
 
 main {
-  background-color: rgb(0, 0, 0);
+  background-color: black;
+  height: 100%;
 }
 
 footer {
@@ -86,6 +87,11 @@ footer .footerEnlaces a {
 }
 .banners .banner {
   width: 100%;
+  transition: all 1s;
+}
+.banners .banner:hover {
+  padding-left: 1%;
+  width: 99%;
 }
 
 main #faqsTitulo .contenedorFaqs {
@@ -106,18 +112,46 @@ main #localidadesTitulo .Localidades {
   flex-direction: column;
 }
 main #localidadesTitulo .Localidades .ciudades {
-  background-color: rgb(75, 75, 75);
+  width: 100%;
+  margin-top: 5%;
+  background-color: rgb(255, 255, 255);
   color: black;
-  width: 250px;
+  width: 500px;
   text-align: center;
 }
 main #localidadesTitulo .Localidades .ciudades .fotosCiudades {
   max-width: 100%;
   padding: 10px;
 }
+main .ciudades {
+  width: 100%;
+  transition: all 2s;
+}
+main .ciudades:hover {
+  padding: 3%;
+  width: 90%;
+}
+
+main #contactoTitulo .contactosContainer {
+  display: flex;
+  align-items: self-end;
+}
+main #contactoTitulo .contactoRedes {
+  width: 200px;
+  padding: 10px;
+  margin: 60px;
+  transition: all 1s;
+}
+main #contactoTitulo .contactoRedes:hover {
+  width: 220px;
+}
+main .flyer {
+  width: 100%;
+}
 
 #Titulo, main #faqsTitulo, main #localidadesTitulo, main #contactoTitulo {
-  color: white;
+  color: rgb(255, 255, 255);
+  padding-top: 1%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -133,7 +167,7 @@ main #localidadesTitulo .Localidades .ciudades .fotosCiudades {
 }
 
 .indumentaria {
-  color: black;
+  color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
   width: 350px;
   margin: 20px;
@@ -143,12 +177,67 @@ main #localidadesTitulo .Localidades .ciudades .fotosCiudades {
 }
 .indumentaria .remera {
   width: 100%;
+  transition: all;
+}
+.indumentaria .remera:hover {
+  width: 90%;
 }
 
 .bienvenidaTienda {
-  @e;
+  width: 100%;
 }
 
+@media (max-width: 1300px) {
+  .contactosContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  main #localidadesTitulo .Localidades {
+    display: flex;
+    flex-direction: column;
+  }
+  main #localidadesTitulo .Localidades .ciudades {
+    width: 10%;
+    margin-top: 5%;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    width: 250px;
+    text-align: center;
+  }
+  main #localidadesTitulo .Localidades .ciudades .fotosCiudades {
+    max-width: 100%;
+    padding: 10px;
+  }
+  main .ciudades {
+    width: 100%;
+    transition: all 2s;
+  }
+  main .ciudades:hover {
+    padding: 3%;
+    width: 90%;
+  }
+  .footerEnlaces ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
+    margin-bottom: 1%;
+  }
+  .footerRedes ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .footerRedes ul li .redes {
+    margin: 10px;
+    margin-top: 10px;
+  }
+  .newsletter {
+    margin-top: 50%;
+  }
+}
 @media (max-width: 425px) {
   header nav ul {
     flex-direction: column;
@@ -163,8 +252,8 @@ main #localidadesTitulo .Localidades .ciudades .fotosCiudades {
   }
   .footerEnlaces ul {
     flex-direction: column;
-    padding: 0%;
-    margin-top: -67%;
+    align-items: baseline;
+    margin-top: 25%;
   }
 }
 

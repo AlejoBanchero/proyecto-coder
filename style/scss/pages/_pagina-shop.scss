@@ -1,5 +1,6 @@
 #Titulo {
     color: rgb(255, 255, 255);
+    padding-top: 1%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -26,6 +27,11 @@
 
     .remera {
         width: 100%;
+        transition: all;
+    }
+
+    .remera:hover{
+        width: 90%;
     }
 
 
@@ -34,3 +40,4 @@
 .bienvenidaTienda {
     width: 100%;
 }
+

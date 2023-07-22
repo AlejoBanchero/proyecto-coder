@@ -1,12 +1,18 @@
 .banners {
-    
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+    
+
     .banner{
         width: 100%;
-        
-
+        transition: all 1s;
     }
+
+    .banner:hover{
+        padding-left: 1%;
+        width: 99%;
+    }
+
 }

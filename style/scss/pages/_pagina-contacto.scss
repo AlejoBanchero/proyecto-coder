@@ -1,5 +1,28 @@
 main { 
     #contactoTitulo {
         @extend #Titulo;
+
+        .contactosContainer{
+            display: flex;
+            align-items: self-end;
+        }
+
+        .contactoRedes {
+            
+            width: 200px;
+            padding: 10px;
+            margin: 60px;
+            transition: all 1s;
+        }
+
+        .contactoRedes:hover {
+            width: 220px;
+        }
+ 
+
+    }
+    .flyer {
+        width: 100%;
     }
 }
+
